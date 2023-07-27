@@ -1,0 +1,208 @@
+:root{
+    background-color: black;
+}
+body{
+    background-color: black !important;
+}
+.flexColCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  .flexCenter {
+    display: flex;
+    row-gap: 2rem;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .flexStart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .flexEnd {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .innerWidth {
+    width: 100%;
+  }
+  .bg-blue-gradient {
+    background: linear-gradient(
+      157.81deg,
+      #def9fa -43.27%,
+      #bef3f5 -21.24%,
+      #9dedf0 12.19%,
+      #7de7eb 29.82%,
+      #5ce1e6 51.94%,
+      #33bbcf 90.29%
+    );
+  }
+  .bg-black-gradient {
+    background: linear-gradient(
+      144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%
+    );
+  }
+  
+  .bg-black-gradient-2 {
+    background: linear-gradient(
+      -168.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%
+    );
+  }
+  
+  .bg-gray-gradient {
+    background: linear-gradient(
+      153.47deg,
+      rgba(255, 255, 255, 0) -341.94%,
+      #14101d 95.11%
+    );
+  }
+  
+  .bg-discount-gradient {
+    background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+  }
+
+
+
+
+
+/* navbar */
+.navbar-brand img {
+   max-width: 80%;
+}
+
+#navbarNav ul li a{
+    color: white;
+    padding: 0px 30px;
+    font-size: larger;
+
+}
+.active{
+    text-decoration: underline;
+    color: white;
+}
+/* Hero section */
+.hero-section{
+    padding: 150px 0px;
+    column-gap: 20rem;
+}
+
+.discount {
+    border-radius: 15px;
+    max-width: 65%;
+
+}
+.discount p{
+    color: white;
+   margin-bottom: 50px;
+   
+}
+
+.discount p span{
+    color:  #6d6d6d;
+}
+
+/* .get-started{
+    border: 2px solid green;
+    border-radius: 50%;
+} */
+.get-started{
+height: 100px;
+width: 100px;
+border: 2px solid green;
+border-radius: 50%;
+display: inline-block;
+}
+.payment-method :nth-child(1){
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    padding: 0px 15px
+}
+.payment-method :nth-child(2){
+    color: green;
+    font-size: 50px;
+    font-weight: bold;
+}
+.payment-method :nth-child(3){
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 15px;
+    
+}
+
+.payment-method :nth-child(4){
+    color: white;
+    padding-left: 15px;
+    padding-top: 30px;
+}
+
+
+.hero-section .img-fluid{
+    margin-left: 22%;
+    margin-top: -15%;
+}
+
+.company-assets{
+    padding:  70px 0px;
+}
+.company-assets h5{
+color: white;
+font-size: 30px;
+}
+.company-assets h5 :nth-child(2){
+    color: white;
+    padding-left: 37px;
+}
+
+.company-assets span{
+    color: green;
+    font-size: 20px;
+}
+.company-assets .horizontal-line{
+    padding-left: 100px !important;
+}
+
+/* Business Section */
+.business-section  h1 ,p{
+color: white;
+
+}
+.business-section h1{
+  line-height: 4.5rem;
+}
+.business-section button{
+  background-color: #38C0D2;
+}
+
+.business-section .right-section .star-img{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.business-section .right-section h3{
+  font-size: 20px;
+  color: white;
+}
+
+/* transection-section */
+.transection-section{
+  padding-top: 60px;
+}
+.transection-section img{
+  max-width: 85%;
+  max-height: 85%;
+}
+
