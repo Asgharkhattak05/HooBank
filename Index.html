@@ -6,18 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Css -->
     <link rel="stylesheet" href="Style.css">
-    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS Animated Css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script> 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+     <title>Document</title>
 </head>
 
 <body>
     <!-- Navbar Start -->
-    <nav class="  navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand" href="#"><img src="./Assets/logo.svg" alt="" srcset=""></a>
+    <nav class="  navbar navbar-expand-lg navbar-light  ">
+        <a class="navbar-brand " href="#"><img src="./Assets/logo.svg" alt="" srcset=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=" navbar-light navbar-toggler-icon"></span>
+            <span class=" ">
+                <i class="fa fa-bars" aria-hidden="true" style="color: white;"></i>
+            </span>
         </button>
         <div class=" flexEnd  collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
@@ -42,8 +50,8 @@
     <div class="hero-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="discount bg-black-gradient-2">
+                <div class="col-md-6 ">
+                    <div class="discount">
                         <p><img src="./Assets/Discount.svg" alt="" srcset=""><span> 20%</span> DISCOUNT FOR <span>1
                                 MONTH</span> ACCOUNT</p>
                     </div>
@@ -52,15 +60,17 @@
                             <h1>The Next</h1>
                             <h1>Generation</h1>
                         </div>
-                        <div class= " circle get-started col-md-6">
-                            <!-- <h4> Get    <img src="./Assets/arrow-up.svg" alt="" srcset=""> <br> Started</h4> -->
+                        <div class= " circle flexCenter col-md-6">
+                            <span class=" get-started">
+                                <p> Get <span><img src="./Assets/arrow-up.svg" alt="" srcset=""></span> <br> Started</p>
+                            </span>
                         </div>
                         <h1>Payment Method</h1>
                         <p>Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. 
                             We examine annual percentage rates, annual fees.</p>
                     </div>
                 </div>
-                <div class="col-md-6    ">
+                <div class="col-md-6" id="robot-img">
                     <img src="./Assets/robot.png" alt="" class="img-fluid" >
                 </div>
             </div>
@@ -68,7 +78,9 @@
         <div class="container company-assets">
             <div class="row">
                 <div class="col-md-4">
-                    <h5>3800+ <span>USER ACTIVE</span><span class="horizontal-line">|</span></h5>
+                    <div class="fs-lg-2hx fs-2x fw-bold text-white d-flex flex-center">
+                    </div>
+                    <h5> <span class="counter" >4500</span>+ <span>USER ACTIVE</span><span class="horizontal-line">|</span></h5>
                 </div>
                 <div class="col-md-4">
                     <h5>489+ <span>TRUSTED BY COMPANY</span><span>|</span></h5>
@@ -132,10 +144,10 @@
     <div class="transection-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 billImg-sec">
+                <div class="col-md-6 billImg-sec" id="billImg-sec">
                     <img src="./Assets/bill.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 right-section">
                     <h2>Easily control your <br> billing & invoicing.</h2>
                     <p>Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio aenean neque. 
                         Fusce ipsum orci rhoncus aliporttitor integer platea placerat.
@@ -149,12 +161,208 @@
         </div>
     </div>
 
-    <!-- Transection Section start -->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <!-- Transection Section end -->
+    <!-- card deal section start -->
+    <div class="carddeal-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Find a better card deal <br> in few easy steps.</h1>
+                    <p>Arcu tortor, purus in mattis at sed integer faucibus. 
+                        Aliquet quis aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+                    </p>
+                    <button class="btn ">Get Started</button>
+                </div>
+                <div class="col-md-6 right-section flexEnd " id="cardDeal-section">
+                   <img src="./Assets/card.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card deal section end -->
+    <!-- Feedback Section start -->
+
+    <div class="feedback-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 header-section">
+                    <h1>What people are <br> saying about us</h1>
+                </div>
+                <div class="col-md-6 flexCenter">
+                    <p class="para">Everything you need to accept card payments <br>and grow your business anywhere on the planet</p>
+                </div>
+            </div>
+            <div class="row cards-section">
+                <div class="col-md-4">
+                    <div class="card firstcard-shadow" id="first-card">
+                        <div class="card-body">
+                          <h5 class="card-title "><img src="./Assets/dot1.svg" alt="" srcset=""></h5>
+                          <p class="card-text pb-4 pt-4">Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
+                          <div class="row">
+                            <div class="col-md-5">
+                                <img src="./Assets/people01.png" alt="" class="img-fluid person">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Herman Jensen</h4>
+                                <h6>Founder & Leader</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" id="second-card">
+                        <div class="card-body">
+                          <h5 class="card-title "><img src="./Assets/dot1.svg" alt="" srcset=""></h5>
+                          <p class="card-text pb-4 pt-4">Everyday is a bank account, and time is our currency. No one is rich, no one is poor, we've got 24 hours each.</p>
+                          <div class="row">
+                            <div class="col-md-5">
+                                <img src="./Assets/people02.png" alt="" class="img-fluid person">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Steve Mark</h4>
+                                <h6>Founder & Leader</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card " id="third-card">
+                        <div class="card-body">
+                          <h5 class="card-title "><img src="./Assets/dot1.svg" alt="" srcset=""></h5>
+                          <p class="card-text pb-4 pt-4">It is usually people in the money business, finance, and international trade that are really rich.</p>
+                          <div class="row">
+                            <div class="col-md-5">
+                                <img src="./Assets/people03.png" alt="" class="img-fluid person">
+                            </div>
+                            <div class="col-md-7">
+                                <h4>Kenn Gallagher</h4>
+                                <h6>Founder & Leader</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- feedback section end -->
+    <!-- Partner Companies section start -->
+
+    <div class="companies-section" id="companies-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="./Assets/airbnb.png" alt="" class="img-fluid airbnb-img">
+                </div>
+                <div class="col-md-3">
+                    <img src="./Assets/binance.png" alt="" class="img-fluid ">
+                </div>
+                <div class="col-md-3">
+                    <img src="./Assets/coinbase.png" alt="" class="img-fluid ">
+                </div>
+                <div class="col-md-3">
+                    <img src="./Assets/dropbox.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Partner Companies section end -->
+    <!-- our sevices section start -->
+         <div class="service-section ">
+            <div class="container   ">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="pl-5">Let’s try our service now!</h1>
+                        <p class="pl-5">Everything you need to accept card payments <br>and grow your business anywhere on the planet.</p>
+                    </div>
+                    <div class="col-md-6 flexCenter ">
+                        <button class="btn ml-5">Get Started</button>
+                    </div>
+                </div>
+            </div>
+         </div>
+    <!-- our sevices section end -->
+    <!-- footer start -->
+    <div class="footer-section mt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 footer-image ">
+                    <img src="./Assets/logo.svg" alt="" class="img-fluid mb-5">
+                    <p>A new way to make the payments easy,<br> reliable and secure.</p>
+                </div>
+                <div class="col-sm-2 ">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Content</a></li>
+                        <li><a href="#">How it Works</a></li>
+                        <li><a href="#">Create</a></li>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Terms & Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5 class="text-white mb-3">Community</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Suggestions</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Newsletters</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5 class="text-white mb-3">Partner</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Our Partner</a></li>
+                        <li><a href="#">Become a Partner</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer end -->
+    
+
+ <!-- jquery -->
+
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var positonTop = $(document).scrollTop();
+                console.log(positonTop);
+                if((positonTop > 0) && (positonTop < 420)){
+                    $('#robot-img').addClass('animate__animated animate__slideInUp');
+                }
+                if((positonTop > 1200) && (positonTop < 1500)){
+
+                 $('#billImg-sec').addClass('animate__animated animate__bounceInLeft');
+
+                }
+                if((positonTop > 1500) && (positonTop < 1800)){
+
+                    $('#cardDeal-section').addClass('animate__animated animate__bounceInRight');
+                   
+                }
+                if((positonTop > 2050) && (positonTop < 2400)){
+
+                $('#first-card').addClass('animate__animated animate__bounceInLeft');
+                $('#second-card').addClass('animate__animated animate__zoomInDown');
+                $('#third-card').addClass('animate__animated animate__bounceInRight');
+
+                 }
+                 if((positonTop > 2350) && (positonTop < 2500)){
+
+                $('#companies-section').addClass('animate__animated animate__bounceInLeft');
+
+                }
+            })
+        })  
+    </script>
 </body>
 
 </html>

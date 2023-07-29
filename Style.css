@@ -27,59 +27,17 @@ body{
   .flexEnd {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    /* align-items: center; */
   }
-  .innerWidth {
-    width: 100%;
-  }
-  .bg-blue-gradient {
-    background: linear-gradient(
-      157.81deg,
-      #def9fa -43.27%,
-      #bef3f5 -21.24%,
-      #9dedf0 12.19%,
-      #7de7eb 29.82%,
-      #5ce1e6 51.94%,
-      #33bbcf 90.29%
-    );
-  }
-  .bg-black-gradient {
-    background: linear-gradient(
-      144.39deg,
-      #ffffff -278.56%,
-      #6d6d6d -78.47%,
-      #11101d 91.61%
-    );
-  }
-  
-  .bg-black-gradient-2 {
-    background: linear-gradient(
-      -168.39deg,
-      #ffffff -278.56%,
-      #6d6d6d -78.47%,
-      #11101d 91.61%
-    );
-  }
-  
-  .bg-gray-gradient {
-    background: linear-gradient(
-      153.47deg,
-      rgba(255, 255, 255, 0) -341.94%,
-      #14101d 95.11%
-    );
-  }
-  
-  .bg-discount-gradient {
-    background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
-  }
-
-
+ 
 
 
 
 /* navbar */
 .navbar-brand img {
    max-width: 80%;
+   padding-left: 100px;
+   
 }
 
 #navbarNav ul li a{
@@ -92,6 +50,8 @@ body{
     text-decoration: underline;
     color: white;
 }
+
+
 /* Hero section */
 .hero-section{
     padding: 150px 0px;
@@ -113,22 +73,29 @@ body{
     color:  #6d6d6d;
 }
 
-/* .get-started{
-    border: 2px solid green;
-    border-radius: 50%;
-} */
 .get-started{
 height: 100px;
 width: 100px;
-border: 2px solid green;
+border: 2px solid white;
 border-radius: 50%;
 display: inline-block;
+margin-top: -12px;
 }
+.hero-section .circle p{
+  font-size: 15px;
+  padding-left: 26px;
+  color: green;
+  margin-top: -16px;
+}
+.hero-section .circle img{
+  padding-top: 16px;
+}
+
 .payment-method :nth-child(1){
     font-size: 50px;
     font-weight: bold;
     color: white;
-    padding: 0px 15px
+  
 }
 .payment-method :nth-child(2){
     color: green;
@@ -175,16 +142,21 @@ font-size: 30px;
     padding-left: 100px !important;
 }
 
+
 /* Business Section */
 .business-section  h1 ,p{
 color: white;
 
 }
 .business-section h1{
-  line-height: 4.5rem;
+  line-height: 3rem;
 }
 .business-section button{
   background-color: #38C0D2;
+}
+.business-section button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .business-section .right-section .star-img{
@@ -197,6 +169,7 @@ color: white;
   color: white;
 }
 
+
 /* transection-section */
 .transection-section{
   padding-top: 60px;
@@ -205,4 +178,211 @@ color: white;
   max-width: 85%;
   max-height: 85%;
 }
+.transection-section .right-section {
+  padding-top: 50px;
+  padding-left: 150px;
+}
+.transection-section h2{
+ line-height: 3rem;
+  color: white;
+ 
+}
+.transection-section p{
+  padding: 20px 0px;
+}
+
+
+
+
+/* carddeal section */
+
+.carddeal-section  h1 ,p{
+  color: white;
+  
+  }
+  .carddeal-section h1{
+    line-height: 3rem;
+  }
+  .carddeal-section button{
+    background-color: #38C0D2;
+  }
+  .carddeal-section button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .carddeal-section .right-section img{
+    width: 80%;
+    height: 80%;
+  }
+
+
+
+
+  /* feedback section */
+
+  .feedback-section .header-section h1{
+    color: white;
+    line-height: 3rem;
+  }
+  .feedback-section .cards-section{
+    padding: 50px 0px;
+  }
+  .feedback-section .card{
+    background-color: black !important;
+  }
+  .feedback-section .firstcard-shadow{
+    background-color: #36353D !important;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  .feedback-section .card .person{
+    width: 90%;
+    height: 90%;
+  }
+  .feedback-section .card h4{
+    color: white;
+    padding-bottom: 7px;
+  }
+  .feedback-section .card h6{
+    color: gray
+    
+  }
+
+
+
+
+  /* companies section */
+
+  .companies-section {
+    padding: 50px 0px;
+  }
+  .companies-section airbnb-img{
+    height: 60%;
+  
+  }
+  .companies-section img{
+    height: 50%;
+  }
+
+
+
+
+  /* services section */
+  
+  .service-section .row{
+    padding: 50px 0px;
+    border-radius: 10px;
+    background-color: #26252F;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  .service-section h1{
+    color: white;
+    padding-bottom: 10px;
+
+  }
+  .service-section button{
+    background-color: #38C0D2;
+  }
+  .service-section button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+
+
+
+/* footer section */
+  .footer-section .footer-image {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 185px;
+  }
+  .footer-section ul li a{
+    text-decoration: none;
+    color: white;
+  }
+
+  /* For Responsive */
+
+  @media screen and (max-width: 758px) {
+    .navbar-brand img {
+     padding-left: 10px;
+  }
+   nav button{
+    margin-top: 10px;
+    margin-left: 28px;
+
+  }
+    .hero-section {
+      padding: 50px 0px;
+     
+  }
+  .hero-section .discount p{
+    width: max-content;
+  }
+    .hero-section .circle {
+     
+      width:auto !important;
+      
+    }
+    .hero-section .payment-method .col-md-6{
+      width: 50% !important;
+    }
+    .hero-section .img-fluid {
+      margin-left: 0%;
+      margin-top: 0%;
+  }
+  .hero-section .company-assets .row{
+    text-align: center;
+  }
+  .business-section .right-section .col-md-3 {
+    justify-content: left;
+    padding-top: 10px;
+  }
+  .business-section .right-section img{
+    position: relative;
+    top: 30px;
+    left: -10px;
+  }
+  .business-section .right-section h3{
+    padding-left: 35px;
+  }
+  .transection-section img {
+    max-width: 100%;
+    max-height: 100%;
+} 
+.transection-section .right-section {
+ 
+  padding-left: 0px;
+  padding-bottom: 50px;
+}
+.carddeal-section .right-section img {
+  width: 100%;
+  height: 100%;
+  padding:  50px 0px;
+}
+.feedback-section .header-section  {
+  text-align: center;
+}
+.companies-section {
+  text-align: center;
+}
+.footer-section .footer-image {
+ 
+  padding-left: 20px;
+}
+
+  }
+
+  /* For Mobile */
+
+  @media screen and (max-width: 412px) {
+   .footer-section .row{
+    text-align: center;
+   }
+}
+
+ 
 
